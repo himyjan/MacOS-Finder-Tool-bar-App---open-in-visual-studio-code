@@ -1,5 +1,5 @@
 # MacOS-Finder-Tool-bar-App---open-in-visual-studio-code
-open script "open-in-visual-studio-code"
+open script "open-in-visual-studio-code.scpt"
 
 ```
 tell application "Terminal"
@@ -27,5 +27,4 @@ Press "Option" key then drag App to Finder Tool bar
 
 ![image](https://user-images.githubusercontent.com/51815522/162170312-4b73db23-4b23-4ddc-8d37-b35e3ff71387.png)
 
-Finished!
-"Press App" to open vscode in current folder
+Finished! "Press App" to open vscode in current folder
