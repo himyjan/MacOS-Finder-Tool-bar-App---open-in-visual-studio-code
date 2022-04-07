@@ -2,16 +2,23 @@
 open script "open-in-visual-studio-code.scpt"
 
 ```
+tell application "Finder"
+	set theWin to window 1
+	set thePath to (POSIX path of (target of theWin as alias)) as text
+end tell
+
 tell application "Terminal"
-	do script "code .;exit"
+	set f to "code " & thePath
+	do script f
+	do script "exit"
 	delay 2
 	quit
-end tell
+end tell	
 ```
 
 and then File -> Export
 
-![image](https://user-images.githubusercontent.com/51815522/162167124-7a8a8dd2-268f-4d17-9cb0-a72ba1f3c337.png)
+![image](https://user-images.githubusercontent.com/51815522/162179216-2bc8d27c-7e4b-49cf-a2a5-79fce256ea76.png)
 
 name the app
 
